@@ -1,22 +1,90 @@
-
-
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic);
+@import url(http://fonts.googleapis.com/css?family=Cuprum:400,700&subset=cyrillic);
+body{
+    font-family: 'PT Sans', sans-serif;
+}
+header{
+    background-color: #d8d8d8;
+    height: 700px;
+    background-image: url("../img/header-bg-line.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-repeat: repeat-x;
+}
+header .header-side{
+    background-image: url("../img/header-bg-image.png");
+    background-repeat: no-repeat;
+    background-position: center 0;
+    height: 100%;
+}
+header ul.header-top-menu{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+header ul.header-top-menu li{
+    display: inline-block;
+}
+header ul.header-top-menu li a{
+    display: block;
+    padding: 2px 5px;
+    color: #4d8441;
+    font-size: 15px;
+}
+header ul.header-top-menu li:first-child a{
+    padding-left: 0;
+}
+header ul.header-top-menu li:last-child a{
+    padding-right: 0;
+}
+header ul.header-top-menu li a:hover{
+    text-decoration: none;
+}
+header ul.header-top-menu li a span{
+    border-bottom: 1px dashed #4d8441;
+}
+header .logo a{
+    display: block;
+    height: 150px;
+    line-height: 150px;
+}
+header .logo img{
+    max-width: 100%;
+}
+header .head-section{
+    padding-top: 15px;
+}
+header .search-side{
+    position: relative;
+}
+header .search-side input[type="text"]{
+    font-size: 13px;
+    height: 28px;
+}
+header .search-side button{
+    position: absolute;
+    top: 1px;
+    right: 0px;
+}
+header .search-side button.search-btn span{
+    display: block;
+    height: 26px;
+    width: 26px;
+    background-image: url("../img/icon/search-icon.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+header .search-side button.search-btn{
+    height: 26px;
+    width: 26px;
+    border:0;
+    background: none;
+    padding: 0;
+    background-color: #f6b302;
+    border-radius: 3px;
+    background-image: url("../img/btn-bg.png");
+    background-size: 100% 100%;
+}
