@@ -7,3 +7,13 @@ if ($(".slider-home").length > 0) {
         $(this).parents(".animated").toggleClass("open");
     });
 }
+// Set custom style, close if clicked, change title type and overlay color
+$(".full-img").fancybox({
+    openEffect: 'elastic',
+    closeEffect: 'elastic',
+    helpers: {
+        title: {
+            type: 'inside'
+        }
+    }
+});
