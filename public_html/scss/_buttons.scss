@@ -1,0 +1,15 @@
+//*Buttons*//
+.btn-call-back{
+    background-image: url("../img/btn-call-bg.png");
+    @include background-size(auto, 100%);
+    @include box-shadow(1px, 1px, 1px, 0, rgba(0,0,0, 0.78));
+    @include transition(background-image, 0.4s);
+    padding: 5px 30px;
+    font-size: 15px;
+    border: 0;
+    color: #FFFFFF;
+    &:hover{
+        color: #FFFFFF;
+         background-image: url("../img/btn-call-bg-hover.png");
+    }
+}
