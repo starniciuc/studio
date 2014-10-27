@@ -95,5 +95,6 @@ main .product-block .description p span { color: #9d9d9d; }
 main .product-block:hover { cursor: pointer; -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 0 27px 0; -moz-box-shadow: rgba(0, 0, 0, 0.3) 0 0 27px 0; box-shadow: rgba(0, 0, 0, 0.3) 0 0 27px 0; }
 main .product-block:hover .zoom-image { display: block; }
 main .product-block:hover a.zoom { display: block; }
+main .reson { height: 300px; background: url("../img/icon/reson.png") no-repeat center top; }
 
 /*# sourceMappingURL=main.css.map */
