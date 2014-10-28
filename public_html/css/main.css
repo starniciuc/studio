@@ -77,7 +77,7 @@ nav.navbar .navbar-sp ul li:hover ul.submenu { display: block; }
 .slider-section .slider-block .bx-wrapper .bx-controls-direction a.bx-next { right: 10px; background: url(../img/slider/navigation.png) no-repeat 0 -46px; }
 .slider-section .slider-block .bx-wrapper .bx-controls-direction a.disabled { display: none; }
 
-main h1.title { font-size: 24px; color: #ffffff; font-family: "Russo One", sans-serif; text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.24); font-weight: normal; text-transform: uppercase; margin-bottom: 35px; }
+main h1.title { margin-top: 30px; font-size: 24px; color: #ffffff; font-family: "Russo One", sans-serif; text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.24); font-weight: normal; text-transform: uppercase; margin-bottom: 35px; }
 main h1.title span { background: #f8c233; /* Old browsers */ background: -moz-linear-gradient(top, #f8c233 0%, #f8c233 50%, #dea819 51%, #dea819 100%); /* FF3.6+ */ background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f8c233), color-stop(50%, #f8c233), color-stop(51%, #dea819), color-stop(100%, #dea819)); /* Chrome,Safari4+ */ background: -webkit-linear-gradient(top, #f8c233 0%, #f8c233 50%, #dea819 51%, #dea819 100%); /* Chrome10+,Safari5.1+ */ background: -o-linear-gradient(top, #f8c233 0%, #f8c233 50%, #dea819 51%, #dea819 100%); /* Opera 11.10+ */ background: -ms-linear-gradient(top, #f8c233 0%, #f8c233 50%, #dea819 51%, #dea819 100%); /* IE10+ */ background: linear-gradient(to bottom, #f8c233 0%, #f8c233 50%, #dea819 51%, #dea819 100%); /* W3C */ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8c233', endColorstr='#dea819',GradientType=0 ); /* IE6-9 */ padding: 8px 20px; }
 main .home-product { background-color: #FFFFFF; }
 main .shadow-product { background: url("../img/product-shadow.png") no-repeat 0 bottom; background-size: 100% auto; padding-bottom: 15px; margin-bottom: 20px; }
@@ -98,5 +98,46 @@ main .product-block:hover a.zoom { display: block; }
 main .reson { background: url("../img/icon/reson.png") no-repeat center top; text-align: center; padding: 200px 15px 0 30px; }
 main .reson a { color: #87b32f; font-size: 20px; font-family: "Raleway", sans-serif; text-transform: uppercase; }
 main .reson a:hover { text-decoration: none; }
+main .information-section { margin-top: 20px; background: url("../img/info-bg.png") repeat 0 0; }
+main .information-section .prorab { background: url("../img/prorab.png") no-repeat 0 center; padding-bottom: 15px; }
+main .information-section h1 { color: #dea819; font-size: 30px; font-family: "Russo One", sans-serif; padding-left: 0; text-transform: uppercase; margin-bottom: 35px; }
+main .information-section .info-block .image-side { -webkit-box-shadow: rgba(0, 0, 0, 0.27) 0 0 5px 0; -moz-box-shadow: rgba(0, 0, 0, 0.27) 0 0 5px 0; box-shadow: rgba(0, 0, 0, 0.27) 0 0 5px 0; padding: 10px; border: 1px solid #e8e8e8; background-color: #f0f0f0; margin-bottom: 5px; }
+main .information-section .info-block .image-side .gradient { background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.07) 0%, rgba(254, 254, 254, 0.07) 70%, rgba(1, 1, 1, 0.07) 100%); /* FF3.6+ */ background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.07)), color-stop(70%, rgba(254, 254, 254, 0.07)), color-stop(100%, rgba(1, 1, 1, 0.07))); /* Chrome,Safari4+ */ background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.07) 0%, rgba(254, 254, 254, 0.07) 70%, rgba(1, 1, 1, 0.07) 100%); /* Chrome10+,Safari5.1+ */ background: -o-linear-gradient(top, rgba(0, 0, 0, 0.07) 0%, rgba(254, 254, 254, 0.07) 70%, rgba(1, 1, 1, 0.07) 100%); /* Opera 11.10+ */ background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.07) 0%, rgba(254, 254, 254, 0.07) 70%, rgba(1, 1, 1, 0.07) 100%); /* IE10+ */ background: linear-gradient(to bottom, rgba(0, 0, 0, 0.07) 0%, rgba(254, 254, 254, 0.07) 70%, rgba(1, 1, 1, 0.07) 100%); /* W3C */ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#12000000', endColorstr='#12010101',GradientType=0 ); /* IE6-9 */ }
+main .information-section .info-block .image-side .gradient img { width: 100%; height: auto; }
+main .information-section .info-block .title { background-color: #8dba44; padding-left: 10px; padding-right: 10px; height: 45px; line-height: 16px; color: #FFFFFF; font-family: "Raleway", sans-serif; font-size: 16px; margin-bottom: 5px; }
+main .information-section .info-block .title .middle { height: 45px; vertical-align: middle; display: inline-block; }
+main .information-section .info-block .title span { vertical-align: middle; display: inline-block; }
+main .information-section .info-block p { color: #383838; font-size: 14px; font-family: "Raleway", sans-serif; }
+main .about { background-color: #FFFFFF; }
+main .about .company p { font-size: 15px; color: #454545; margin-bottom: 25px; }
+main .about .company .image-side { float: left; margin-right: 30px; margin-bottom: 15px; }
+main .about .hot-news h2 { color: #dea819; font-family: "Russo One", sans-serif; font-size: 24px; text-transform: uppercase; }
+main .about .hot-news ul { margin: 0; padding: 0; list-style: none; padding-top: 20px; }
+main .about .hot-news ul li { display: block; margin-bottom: 15px; }
+main .about .hot-news ul li .news { font-family: "Raleway", sans-serif; }
+main .about .hot-news ul li .news .title { background-color: #8dba44; font-size: 14px; color: #FFFFFF; padding: 5px 15px; }
+main .about .hot-news ul li .news .date { color: #73a326; font-size: 13px; padding: 5px; }
+main .about .hot-news ul li .news p { color: #383838; font-size: 13px; }
+
+footer { -webkit-box-shadow: rgba(0, 0, 0, 0.41) 0 0 29px 0; -moz-box-shadow: rgba(0, 0, 0, 0.41) 0 0 29px 0; box-shadow: rgba(0, 0, 0, 0.41) 0 0 29px 0; background: #99c453; /* Old browsers */ background: -moz-linear-gradient(top, #99c453 0%, #7faa39 50%, #7faa39 100%); /* FF3.6+ */ background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #99c453), color-stop(50%, #7faa39), color-stop(100%, #7faa39)); /* Chrome,Safari4+ */ background: -webkit-linear-gradient(top, #99c453 0%, #7faa39 50%, #7faa39 100%); /* Chrome10+,Safari5.1+ */ background: -o-linear-gradient(top, #99c453 0%, #7faa39 50%, #7faa39 100%); /* Opera 11.10+ */ background: -ms-linear-gradient(top, #99c453 0%, #7faa39 50%, #7faa39 100%); /* IE10+ */ background: linear-gradient(to bottom, #99c453 0%, #7faa39 50%, #7faa39 100%); /* W3C */ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99c453', endColorstr='#7faa39',GradientType=0 ); /* IE6-9 */ margin-top: 50px; }
+footer .telephone { text-align: right; }
+footer .telephone .number-side { display: inline-block; padding-top: 20px; margin-right: 20px; }
+footer .telephone .number-side p { margin: 0; padding: 0; }
+footer .telephone .number-side a { color: #bbf461; font-size: 24px; }
+footer .telephone .number-side a:hover { text-decoration: none; }
+footer .telephone .number-side a span { color: #4d8341; }
+footer .telephone .number-side .icon-call { height: 30px; width: 30px; float: left; margin-top: 2px; margin-right: 10px; background: url("../img/icon/footer.png") no-repeat -165px -45px; }
+footer .telephone .logo-footer { width: 110px; height: 110px; background: url("../img/icon/footer.png") no-repeat 0 0; }
+footer strong { color: #4e8643; font-family: Arial, sans-serif; font-weight: bold; font-size: 14px; }
+footer .adress, footer .email, footer .work { padding-top: 30px; }
+footer .adress p, footer .email p, footer .work p { font-family: Arial, sans-serif; color: #FFFFFF; margin: 0; padding: 0; }
+footer .email a { color: #FFFFFF; }
+footer .work p span { color: #4e8643; }
+footer .icon { background: url("../img/icon/footer.png") no-repeat 0 0; float: left; width: 45px; height: 40px; }
+footer .icon.home { background-position: -114px 0; }
+footer .icon.mail { background-position: -114px -40px; }
+footer .icon.cog { background-position: -160px -0px; }
+footer .last-section { border-top: 1px solid #709533; -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15); -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15); box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15); }
+footer .last-section p { line-height: 35px; color: #b7e66c; font-size: 14px; }
 
 /*# sourceMappingURL=main.css.map */
