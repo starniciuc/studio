@@ -766,3 +766,36 @@ footer{
         }
     }
 }
+h1, h2{
+    font-family: $font-russo;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #dda104;
+    font-weight: normal;
+}
+h2{
+    font-size: 18px;
+}
+h3, h4{
+    font-family: $font-raleway;
+    font-size: 20px;
+    font-weight: bold;
+    color: #87b32f;
+    text-transform: uppercase;
+}
+h4{
+    font-size: 18px;
+    font-weight: normal;
+}
+h5, h6{
+    font-family: $font-pt;
+    font-size: 22px;
+    font-weight: normal;
+    color: #000000;
+}
+h6{
+    font-size: 18px;
+}
+.bg-white{
+    background-color: #FFF;
+}
