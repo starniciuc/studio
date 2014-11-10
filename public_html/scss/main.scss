@@ -4,12 +4,7 @@
 @import "compass/css3";
 @import "_fonts.scss";
 @import "_functions.scss";
-
-$font-pt :      'PT Sans', sans-serif;
-$font-raleway : 'Raleway', sans-serif;;
-$font-cuprum :  'Cuprum', sans-serif;
-$font-russo :   'Russo One', sans-serif;
-
+@import "_std.scss";
 @import "_buttons.scss";
 
 body{
@@ -667,6 +662,38 @@ main {
             }
         }
     }
+	.bg-white{
+		background-color: #FFF;
+	}
+	.text-content{
+		.image-side{
+                @include box-shadow(0, 0, 5px, 0, rgba(0, 0, 0, 0.27));
+                padding: 10px;
+                border: 1px solid #e8e8e8;
+                background-color: #f0f0f0;
+                margin-bottom: 5px;
+				float: left;
+				width: 200px; 
+                .gradient{
+                    background: -moz-linear-gradient(top, rgba(0,0,0,0.07) 0%, rgba(254,254,254,0.07) 70%, rgba(1,1,1,0.07) 100%); /* FF3.6+ */
+                    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.07)), color-stop(70%,rgba(254,254,254,0.07)), color-stop(100%,rgba(1,1,1,0.07))); /* Chrome,Safari4+ */
+                    background: -webkit-linear-gradient(top, rgba(0,0,0,0.07) 0%,rgba(254,254,254,0.07) 70%,rgba(1,1,1,0.07) 100%); /* Chrome10+,Safari5.1+ */
+                    background: -o-linear-gradient(top, rgba(0,0,0,0.07) 0%,rgba(254,254,254,0.07) 70%,rgba(1,1,1,0.07) 100%); /* Opera 11.10+ */
+                    background: -ms-linear-gradient(top, rgba(0,0,0,0.07) 0%,rgba(254,254,254,0.07) 70%,rgba(1,1,1,0.07) 100%); /* IE10+ */
+                    background: linear-gradient(to bottom, rgba(0,0,0,0.07) 0%,rgba(254,254,254,0.07) 70%,rgba(1,1,1,0.07) 100%); /* W3C */
+                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#12000000', endColorstr='#12010101',GradientType=0 ); /* IE6-9 */
+                    img{
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+		}
+		p{
+			font-size: 14px;
+			font-family: $font-raleway;
+			color: #383838;
+		}
+	}
 }
 footer{
     @include box-shadow(0, 0, 29px, 0, rgba(0, 0, 0, 0.41));
@@ -765,37 +792,4 @@ footer{
             font-size: 14px;
         }
     }
-}
-h1, h2{
-    font-family: $font-russo;
-    font-size: 24px;
-    text-transform: uppercase;
-    color: #dda104;
-    font-weight: normal;
-}
-h2{
-    font-size: 18px;
-}
-h3, h4{
-    font-family: $font-raleway;
-    font-size: 20px;
-    font-weight: bold;
-    color: #87b32f;
-    text-transform: uppercase;
-}
-h4{
-    font-size: 18px;
-    font-weight: normal;
-}
-h5, h6{
-    font-family: $font-pt;
-    font-size: 22px;
-    font-weight: normal;
-    color: #000000;
-}
-h6{
-    font-size: 18px;
-}
-.bg-white{
-    background-color: #FFF;
 }
