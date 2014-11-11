@@ -17,3 +17,13 @@ $(".full-img").fancybox({
         }
     }
 });
+$(".open-collapse").click(function(){
+	var $this = $(this);
+	$this.toggleClass("open");
+	if($this.hasClass("open")){
+		$this.html("<span></span>Свернуть ответ")
+	}else{
+		$this.html("<span></span>Читать ответ")
+	}
+	$this.parents(".answer").find(".collapse").collapse("toggle");
+});
