@@ -447,6 +447,13 @@ main {
             filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8c233', endColorstr='#dea819',GradientType=0 ); /* IE6-9 */
             padding:8px 20px;
         }
+        &.full-width{
+            margin: 15px 0;
+            span{
+                display: block;
+                width: 100%;
+            }
+        }
     }
     .home-product{
         background-color: #FFFFFF;
@@ -662,38 +669,179 @@ main {
             }
         }
     }
-	.bg-white{
-		background-color: #FFF;
-	}
-	.text-content{
-		.image-side{
-                @include box-shadow(0, 0, 5px, 0, rgba(0, 0, 0, 0.27));
-                padding: 10px;
-                border: 1px solid #e8e8e8;
-                background-color: #f0f0f0;
-                margin-bottom: 5px;
-				float: left;
-				width: 200px; 
-                .gradient{
-                    background: -moz-linear-gradient(top, rgba(0,0,0,0.07) 0%, rgba(254,254,254,0.07) 70%, rgba(1,1,1,0.07) 100%); /* FF3.6+ */
-                    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.07)), color-stop(70%,rgba(254,254,254,0.07)), color-stop(100%,rgba(1,1,1,0.07))); /* Chrome,Safari4+ */
-                    background: -webkit-linear-gradient(top, rgba(0,0,0,0.07) 0%,rgba(254,254,254,0.07) 70%,rgba(1,1,1,0.07) 100%); /* Chrome10+,Safari5.1+ */
-                    background: -o-linear-gradient(top, rgba(0,0,0,0.07) 0%,rgba(254,254,254,0.07) 70%,rgba(1,1,1,0.07) 100%); /* Opera 11.10+ */
-                    background: -ms-linear-gradient(top, rgba(0,0,0,0.07) 0%,rgba(254,254,254,0.07) 70%,rgba(1,1,1,0.07) 100%); /* IE10+ */
-                    background: linear-gradient(to bottom, rgba(0,0,0,0.07) 0%,rgba(254,254,254,0.07) 70%,rgba(1,1,1,0.07) 100%); /* W3C */
-                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#12000000', endColorstr='#12010101',GradientType=0 ); /* IE6-9 */
-                    img{
-                        width: 100%;
-                        height: auto;
+    .bg-white{
+        background-color: #FFF;
+    }
+    .text-content{
+        .image-side{
+            @include box-shadow(0, 0, 5px, 0, rgba(0, 0, 0, 0.27));
+            padding: 10px;
+            border: 1px solid #e8e8e8;
+            background-color: #f0f0f0;
+            margin-bottom: 5px;
+            float: left;
+            max-width: 320px; 
+            margin-right: 15px;
+
+            .gradient{
+                background: -moz-linear-gradient(top, rgba(0,0,0,0.07) 0%, rgba(254,254,254,0.07) 70%, rgba(1,1,1,0.07) 100%); /* FF3.6+ */
+                background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.07)), color-stop(70%,rgba(254,254,254,0.07)), color-stop(100%,rgba(1,1,1,0.07))); /* Chrome,Safari4+ */
+                background: -webkit-linear-gradient(top, rgba(0,0,0,0.07) 0%,rgba(254,254,254,0.07) 70%,rgba(1,1,1,0.07) 100%); /* Chrome10+,Safari5.1+ */
+                background: -o-linear-gradient(top, rgba(0,0,0,0.07) 0%,rgba(254,254,254,0.07) 70%,rgba(1,1,1,0.07) 100%); /* Opera 11.10+ */
+                background: -ms-linear-gradient(top, rgba(0,0,0,0.07) 0%,rgba(254,254,254,0.07) 70%,rgba(1,1,1,0.07) 100%); /* IE10+ */
+                background: linear-gradient(to bottom, rgba(0,0,0,0.07) 0%,rgba(254,254,254,0.07) 70%,rgba(1,1,1,0.07) 100%); /* W3C */
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#12000000', endColorstr='#12010101',GradientType=0 ); /* IE6-9 */
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+        p{
+            font-size: 14px;
+            font-family: $font-raleway;
+            color: #383838;
+        }
+    }
+    ul.breadcrumb.sp-style{
+        border-radius: 0;
+        background: none;
+        padding: 10px 0 0;
+        li{
+            color: #383838;
+            font-size: 14px;
+            font-family: $font-raleway;
+            background: url("../img/breadcumb.png") no-repeat 0px center;
+            padding-left: 15px; 
+            padding-right: 10px;
+
+            a{
+                color: #383838;                
+                text-decoration: underline;
+                &:hover{
+                    text-decoration: none;
+                }
+            }
+            &:before{
+                content: " ";
+                padding: 0;
+            }
+        }
+    }
+    .share{
+        height: 35px;
+        background: rgb(241,241,241); /* Old browsers */
+        background: -moz-linear-gradient(top, rgba(241,241,241,1) 0%, rgba(241,241,241,1) 50%, rgba(233,233,233,1) 51%, rgba(233,233,233,1) 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(241,241,241,1)), color-stop(50%,rgba(241,241,241,1)), color-stop(51%,rgba(233,233,233,1)), color-stop(100%,rgba(233,233,233,1))); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top, rgba(241,241,241,1) 0%,rgba(241,241,241,1) 50%,rgba(233,233,233,1) 51%,rgba(233,233,233,1) 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top, rgba(241,241,241,1) 0%,rgba(241,241,241,1) 50%,rgba(233,233,233,1) 51%,rgba(233,233,233,1) 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top, rgba(241,241,241,1) 0%,rgba(241,241,241,1) 50%,rgba(233,233,233,1) 51%,rgba(233,233,233,1) 100%); /* IE10+ */
+        background: linear-gradient(to bottom, rgba(241,241,241,1) 0%,rgba(241,241,241,1) 50%,rgba(233,233,233,1) 51%,rgba(233,233,233,1) 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1f1f1', endColorstr='#e9e9e9',GradientType=0 ); /* IE6-9 */
+        padding: 0px 15px;
+        ul{
+            @include clear-size();
+            list-style: none;
+            li{
+                line-height: 35px;
+                float: left;
+                font-size: 16px;
+                color: #f7bb1c;
+                font-weight: bold;
+                text-transform: uppercase;
+                text-shadow: 1px 1px 1px #FFFFFF;
+                margin-right: 15px;
+                height: 35px;
+
+                a.icon{
+                    display: block;
+                    background: url("../img/icon/social.png") no-repeat 0 center;
+                    width: 12px;
+                    height: 35px;
+                    @include transition(opacity, 0.4s);
+                    &.tw{
+                        background-position: -14px center;
+                        width: 20px;
+                    }
+                    &.od{
+                        background-position: -34px center;
+                        width: 11px;
+                    }
+                    &.vk{
+                        background-position: -45px center;
+                        width: 15px;
+                    }
+                    &:hover{
+                        @include opacity(0.7);
                     }
                 }
-		}
-		p{
-			font-size: 14px;
-			font-family: $font-raleway;
-			color: #383838;
-		}
-	}
+            }
+        }
+    }
+    .date{
+        color: #73a326;
+        font-size: 13px;
+        padding: 5px;
+    } 
+    .list-side{
+        padding-top: 15px;
+        h5{
+            font-family: $font-raleway;
+        }
+    }
+    .banner{
+        width: 100%;
+        img{
+            img{
+                width: 100%;
+            }
+        }
+    }
+    .padding-top{
+        padding-top: 15px;
+    }
+    .name-filter{
+        color: #FFFFFF;
+        background-color: #8dba44;
+        font-size: 16px;
+        font-family: $font-raleway;
+        padding: 4px 10px;
+        margin: 3px 0;
+    }
+    .filter{
+        .checkbox-sp{
+            margin-left: 10px;
+        }
+    }
+    .news-list{
+        .news-item{
+            border: 1px solid #dadada;
+            padding: 10px;
+            position:relative;    
+            @include box-shadow(0, 3px, 5px, rgba(0, 0, 0, 0.1));
+            margin-bottom: 10px;
+            .image-side{
+                width: 230px;
+                img{
+                    border: 1px solid transparent;
+                    @include transition(all, 0.35s);
+                }
+                &:hover img{
+                    border: 1px solid #dda104;
+                }
+            }
+            a{
+                color: #518b46;
+                font-size: 18px;
+                font-family: $font-raleway;
+                @include transition(color, 0.35s);
+                text-decoration: underline;
+                &:hover{
+                    color: #dda104;
+                }
+            }
+        }
+    }
 }
 footer{
     @include box-shadow(0, 0, 29px, 0, rgba(0, 0, 0, 0.41));

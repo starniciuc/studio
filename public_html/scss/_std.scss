@@ -4,6 +4,7 @@ h1, h2{
     text-transform: uppercase;
     color: #dda104;
     font-weight: normal;
+    margin: 10px 0;
 }
 h2{
     font-size: 18px;
@@ -14,6 +15,7 @@ h3, h4{
     font-weight: bold;
     color: #87b32f;
     text-transform: uppercase;
+    margin: 10px 0;
 }
 h4{
     font-size: 18px;
@@ -24,7 +26,182 @@ h5, h6{
     font-size: 22px;
     font-weight: normal;
     color: #000000;
+    margin: 10px 0;
 }
 h6{
     font-size: 18px;
+}
+ol{
+    @include clear-size();
+    padding-left: 30px;
+    & > li{
+        color: #383838;
+        font-family: $font-raleway;
+        font-size: 15px;
+        @include transition(color, 0.4s);
+        a{
+            color: #383838;
+            font-family: $font-raleway;
+            font-size: 15px;
+            @include transition(all, 0.4s);
+        }
+        &:hover{
+            color: #73a326;
+            a{
+                color: #73a326;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+ul.list{
+    @include clear-size();
+    list-style: none;
+
+    & > li{
+        color: #383838;
+        font-family: $font-raleway;
+        font-size: 15px;
+        background: url("../img/breadcumb.png") no-repeat 0px center;
+        padding-left: 20px; 
+
+        a{
+            color: #383838;
+            font-family: $font-raleway;
+            font-size: 15px;
+            @include transition(all, 0.4s);
+        }
+        &:hover{
+            color: #73a326;
+            a{
+                color: #73a326;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+.margin-top{
+    margin-top: 15px;
+}
+.checkbox-sp{
+    position: relative;
+    input[type="checkbox"]{
+        position: absolute;
+        top: 0;
+        left: 0;
+        @include opacity(0);
+        & + label{
+            padding-left: 25px;
+            background: url("../img/icon/checkbox.png") no-repeat 0 1px;
+            color: #383838;
+            font-family: $font-raleway;
+            font-size: 13px;
+            cursor: pointer;
+            font-weight: normal;
+        }
+        &:checked + label{
+            color: #518b46;
+            background: url("../img/icon/checkbox.png") no-repeat 0 -17px;
+        }
+        &:disabled + label{
+            color: #a6a6a6;
+            background: url("../img/icon/checkbox.png") no-repeat 0 -36px;
+        }
+    }
+}
+.radio-sp{
+    position: relative;
+    input[type="radio"]{
+        position: absolute;
+        top: 0;
+        left: 0;
+        @include opacity(0);
+        & + label{
+            padding-left: 25px;
+            background: url("../img/icon/radio.png") no-repeat 0 2px;
+            color: #383838;
+            font-family: $font-raleway;
+            font-size: 13px;
+            cursor: pointer;
+            font-weight: normal;
+        }
+        &:checked + label{
+            color: #518b46;
+            background: url("../img/icon/radio.png") no-repeat 0 -15px;
+        }
+        &:disabled + label{
+            color: #a6a6a6;
+            background: url("../img/icon/radio.png") no-repeat 0 -34px;
+        }
+    }
+}
+.table-sp{
+    width: 100%;
+    border: 1px solid #dadada;
+    @include box-shadow(0, 0, 6px, 0,rgba(0, 0, 0, 0.3) );
+    tr{
+        th{
+            background-color: #8ebc47;
+            color: #FFFFFF;
+            font-size: 18px;
+            font-family: $font-pt;
+            font-weight: normal;
+            padding: 3px 10px;
+        }
+        td{
+            padding: 3px 15px;
+            color: #2f2f2f;
+            font-size: 15px;
+            font-family: $font-raleway;
+            background-color: #f1f1f1;
+            border-bottom: 1px dotted #9d9d9d;
+            border-right: 1px solid #dadada;
+            &:last-child{
+                border-right: 0;
+            }
+            span{
+                color: #9d9d9d;
+            }
+        }
+    }
+}
+.btn-group.bootstrap-select{
+    .btn-default{
+        background: none;
+        border: 1px solid #d8d8d8;
+        font-size: 13px;
+        color: #383838;
+        font-family: $font-pt;
+        @include box-shadow(0, 1px , 2px, rgba(0,0,0,0.1), inset);
+        height: 28px;
+        line-height: 28px;
+        padding-top: 0;
+    }
+    .btn .caret{
+        background: url("../img/icon/dropdown.png") no-repeat 0 0;
+        top: 0;
+        right: 0;
+        width: 26px;
+        height: 26px;
+        border:0;
+        margin: 0;
+        display: block;
+    }
+    .dropdown-menu{
+        @include box-shadow(0, 2px, 4px rgba(0, 0, 0, 0.22));
+        background: rgb(249,249,249); /* Old browsers */
+        background: -moz-linear-gradient(top, rgba(249,249,249,1) 0%, rgba(227,227,227,1) 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(249,249,249,1)), color-stop(100%,rgba(227,227,227,1))); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top, rgba(249,249,249,1) 0%,rgba(227,227,227,1) 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top, rgba(249,249,249,1) 0%,rgba(227,227,227,1) 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top, rgba(249,249,249,1) 0%,rgba(227,227,227,1) 100%); /* IE10+ */
+        background: linear-gradient(to bottom, rgba(249,249,249,1) 0%,rgba(227,227,227,1) 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', endColorstr='#e3e3e3',GradientType=0 ); /* IE6-9 */
+        li.selected a,
+        li:hover a{
+            background: none;
+            background-color: #8ebc47;
+            color: #FFFFFF;
+        }
+    }
 }

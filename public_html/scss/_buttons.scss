@@ -10,6 +10,14 @@
     color: #FFFFFF;
     &:hover{
         color: #FFFFFF;
-         background-image: url("../img/btn-call-bg-hover.png");
+        background-image: url("../img/btn-call-bg-hover.png");
     }
 }
+.btn-query{
+    font-size: 20px;
+    margin: 15px 0;
+    span{
+        background: url("../img/icon/query.png") no-repeat 0 center;
+        padding: 10px 30px;
+    }
+}    
