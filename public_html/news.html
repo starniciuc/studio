@@ -13,7 +13,6 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link href="css/jquery.fancybox.css" rel="stylesheet" type="text/css"/>
-        <link href="css/bootstrap-select.min.css" rel="stylesheet" type="text/css"/>
         <link rel="stylesheet" href="css/main.css">
 
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
@@ -36,7 +35,7 @@
                         <div class="col-sm-9">
                             <div class="head-section">
                                 <div class="row">
-                                    <div class="col-sm-9">
+                                    <div class="col-md-9 col-sm-12">
                                         <ul class="header-top-menu">
                                             <li>
                                                 <a href="#"><span>О компании</span></a>
@@ -47,7 +46,6 @@
                                                         <li><a href="#">Как стать дистрибьютором</a></li>
                                                     </ul>
                                                 </div>
-
                                             </li>
                                             <li><a href="#"><span>Вопрос-ответ</span></a></li>
                                             <li><a href="#"><span>Новости</span></a></li>
@@ -56,7 +54,7 @@
                                             <li><a href="#"><span>Контакты</span></a></li>
                                         </ul>
                                     </div>
-                                    <div class="col-sm-3">
+                                    <div class="col-md-3 col-sm-12">
                                         <div class="search-side">
                                             <input type="text" class="form-control" placeholder="Поиск по сайту...">
                                             <button class="btn search-btn">
@@ -67,7 +65,7 @@
                                 </div>
                                 <div class="row">
                                     <div class="call-back-side">
-                                        <div class="col-sm-4">
+                                        <div class="col-md-4 col-sm-5">
                                             <p>
                                                 <span class="icon-call"></span><a href="+83912695696" class="number"><span>8 (391)</span> 2-695-696</a>
                                             </p>
@@ -76,7 +74,7 @@
                                             </p>
 
                                         </div>
-                                        <div class="col-sm-4 button-call-side">
+                                        <div class="col-md-4 col-sm-5 button-call-side">
                                             <div class="image-arrow"></div>
                                             <a data-toggle="modal" data-target="#callback" class="btn btn-call-back">Заказать звонок</a>
                                         </div>
@@ -93,11 +91,9 @@
                             <div class="navbar-sp">
                                 <div class="navbar-header">
                                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                                        <span class="sr-only">Toggle navigation</span>
-                                        <span class="icon-bar"></span>
-                                        <span class="icon-bar"></span>
-                                        <span class="icon-bar"></span>
+                                        <i class="fa fa-bars"></i>
                                     </button>
+                                    <a class="visible-xs pull-right call-mobile" data-toggle="modal" data-target="#callback" ><i class="fa fa-phone"></i></a>
                                 </div>
                                 <div class="navbar-collapse collapse">
                                     <ul class="clearfix">
@@ -125,13 +121,12 @@
                         </div>
                     </div>
                 </nav>
-
                 <main>
                     <section class="container">
                         <div class="bg-white">
                             <div class="row-fluid clearfix">
                                 <div class="col-md-3 hidden-sm hidden-xs text-center">
-                                    <button class="btn btn-call-back btn-query">
+                                    <button class="btn btn-call-back btn-query" data-toggle="modal" data-target="#askQuery">
                                         <span></span> Задать вопрос
                                     </button>
                                     <div class="banner">
@@ -195,18 +190,18 @@
                                                 <p>Купить ковролин для офиса - непростая задача, требующая много времени и знаний. Она непроста в первую очередь потому что среднестатистический человек покупает напольные покрытия 2-3 раза в своей жизни. </p>
                                             </div>
                                         </div>
-										<div class="text-center">
-											<ul class="pagination">
-												<li><a href="#" class="prev"></a></li>
-												<li><a href="#">1</a></li>
-												<li class="active"><a href="#">2</a></li>
-												<li><a href="#">3</a></li>
-												<li><a href="#">4</a></li>
-												<li><a href="#">5</a></li>
-												<li><a href="#" class="next"></a></li>
-											</ul>
+                                        <div class="text-center">
+                                            <ul class="pagination">
+                                                <li><a href="#" class="prev"></a></li>
+                                                <li><a href="#">1</a></li>
+                                                <li class="active"><a href="#">2</a></li>
+                                                <li><a href="#">3</a></li>
+                                                <li><a href="#">4</a></li>
+                                                <li><a href="#">5</a></li>
+                                                <li><a href="#" class="next"></a></li>
+                                            </ul>
 
-										</div>
+                                        </div>
                                     </div>
 
                                 </div>
@@ -259,31 +254,102 @@
                 </footer>
             </div>
         </section>
+        <div class="modal fade bs-example-modal-md" id="askQuery" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-md modal-vertical-centered  modal-def">
+                <div class="modal-content modal-pers">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+                    <div class="form-side">
+                        <form>
+                            <div class="body">
+                                <h1 class="text-center">Задать вопрос</h1>
+                                <div class="form-group">
+                                    <input class="form-control" type="text" placeholder="Как вас зовут*">
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" type="text" placeholder="Email">
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" type="text" placeholder="Телефон*">
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="form-control" placeholder="Опишите кратко свой вопрос*"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <p>* Поля обязательны к заполнению</p>
+                                </div>
+                            </div>
+                            <div class="footer">
+                                <div class="text-center">
+                                    <button type="submit" class="btn btn-call-back">Отправить</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div>
+        </div>
+        <div class="modal fade bs-example-modal-md" id="order" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-md modal-vertical-centered  modal-def">
+                <div class="modal-content modal-pers">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+                    <div class="form-side">
+                        <form>
+                            <div class="body">
+                                <h1 class="text-center">опишите подробно вашу заявку</h1>
+                                <div class="form-group">
+                                    <input class="form-control" type="text" placeholder="Как вас зовут*">
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" type="text" placeholder="Email">
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" type="text" placeholder="Телефон*">
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="form-control" placeholder="Опишите кратко свой вопрос*"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <p>* Поля обязательны к заполнению</p>
+                                </div>
+                            </div>
+                            <div class="footer">
+                                <div class="text-center">
+                                    <button type="submit" class="btn btn-call-back">Отправить</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div>
+        </div>
         <div class="modal fade bs-example-modal-md" id="callback" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-md modal-vertical-centered  modal-def">
                 <div class="modal-content modal-pers">
-                    <div class="modal-header title">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
-                        <h2>Заказать звонок</h2>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+                    <div class="form-side">
+                        <form>
+                            <div class="body">
+                                <h1 class="text-center">Заказать звонок</h1>
+                                <div class="form-group">
+                                    <input class="form-control" type="text" placeholder="Как вас зовут*">
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" type="text" placeholder="Телефон*">
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="form-control" placeholder="Опишите кратко свой вопрос*"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <p>* Поля обязательны к заполнению</p>
+                                </div>
+                            </div>
+                            <div class="footer">
+                                <div class="text-center">
+                                    <button type="submit" class="btn btn-call-back">Отправить</button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
-                    <form>
-                        <div class="modal-body modal-body-re">
-                            <div class="form-group"><input type="text" class="form-control" placeholder="Как вас зовут*"></div>
-                            <div class="form-group"><input type="text" class="form-control" placeholder="Телефон*"></div>
-                            <div class="form-group">
-                                <textarea placeholder="Опишите кратко свой вопрос*" class="form-control"></textarea>
-                            </div>
-                            <div class="form-group info">
-                                <p><span>*</span> поля обязательны для заполнения</p>
-                            </div>
-                        </div>
-                        <div class="modal-footer footer">
-                            <div class="button">
-                                <button type="submit">Отправить</button>
-                            </div>
-
-                        </div>
-                    </form>
                 </div><!-- /.modal-content -->
             </div>
         </div>
