@@ -215,9 +215,9 @@ main .pagination li a.next, main .pagination li a.prev { display: block; backgro
 main .pagination li a.next { background-position: -30px center; }
 main .pagination li.active a { background: none; text-decoration: none; font-weight: bold; color: #dda104; }
 main .pagination li.active a:hover, main .pagination li.active a:focus, main .pagination li.active a:active { background: none; text-decoration: none; font-weight: bold; color: #dda104; }
-main .query-list .query-item { border: 1px solid #dadada; margin-bottom: 15px; -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); -moz-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); }
+main .query-list .query-item { border: 1px solid #dadada; margin-bottom: 25px; -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1); -moz-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1); box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1); }
 main .query-list .query-item .name { height: 30px; }
-main .query-list .query-item .name .name-text { width: 200px; background-color: #548949; color: #FFFFFF; font-size: 16px; height: 30px; line-height: 30px; text-align: center; font-family: "Raleway", sans-serif; float: left; margin-right: 20px; }
+main .query-list .query-item .name .name-text { min-width: 200px; background-color: #548949; color: #FFFFFF; font-size: 16px; height: 30px; line-height: 30px; text-align: center; font-family: "Raleway", sans-serif; float: left; margin-right: 20px; }
 main .query-list .query-item .name .date { color: #548949; }
 main .query-list .query-item .text { padding: 10px; font-size: 15px; color: #454545; }
 main .query-list .query-item .text span { color: #518b46; }

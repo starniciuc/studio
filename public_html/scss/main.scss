@@ -898,13 +898,13 @@ main {
 	.query-list{
 		.query-item{
 			border: 1px solid #dadada;
-			margin-bottom: 15px;
-			@include box-shadow(0, 3px, 5px, rgba(0, 0, 0, 0.1));
+			margin-bottom: 25px;
+			@include box-shadow(0, 10px, 10px, rgba(0, 0, 0, 0.1));
 
 			.name{
 				height: 30px;
 				.name-text{
-					width: 200px;
+					min-width: 200px;
 					background-color: #548949;
 					color: #FFFFFF;
 					font-size: 16px;
